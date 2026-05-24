@@ -1,0 +1,12 @@
+{
+	"name": "weather-web-app",
+	"version": "1.0.0",
+	"description": "A 7-day weather forecast app with activity suggestions.",
+	"private": true,
+	"scripts": {
+		"start": "live-server --port=5500 --open=./index.html"
+	},
+	"devDependencies": {
+		"live-server": "^1.2.0"
+	}
+}

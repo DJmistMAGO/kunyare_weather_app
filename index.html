@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Week + Activity Guide</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="app-shell">
+			<header>
+				<h1>Weather Week</h1>
+				<p>Get a multi-day forecast and activity ideas for each day.</p>
+			</header>
+
+			<section class="search-panel">
+				<label
+					for="city-input"
+					style="display: block; margin-bottom: 8px"
+				>
+					Search by city
+				</label>
+				<div
+					class="search-row"
+					style="display: flex; gap: 8px; margin-top: 8px"
+				>
+					<input
+						id="city-input"
+						type="text"
+						placeholder="Enter a city, e.g. Quezon City"
+					/>
+					<button id="search-button" type="button">Search</button>
+				</div>
+				<!-- <p class="hint">
+					Need an API key? Add it to <code>script.js</code> in the
+					<code>API_KEY</code> constant.
+				</p> -->
+			</section>
+
+			<section id="weather-container" class="weather-container hidden">
+				<div class="location-card">
+					<div>
+						<h2 id="location-name"></h2>
+						<p id="current-summary"></p>
+					</div>
+					<div class="current-temp" id="current-temp"></div>
+				</div>
+
+				<div id="forecast-grid" class="forecast-grid"></div>
+			</section>
+
+			<section id="error-message" class="error-message hidden"></section>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
